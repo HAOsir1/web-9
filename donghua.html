@@ -1,0 +1,40 @@
+<!DOCTYPE html >
+<html>
+    <head>
+        <meta charset="uft-8">
+        <style>
+            .box2{
+                position:absolute
+            }
+              .box1 {animation:my 5s infinite;
+                width:100px;
+                height:100px;
+                position:relative;
+                -webkit-transition: width 2s,height 4s, transform 2s;
+            }
+            .box1:hover{
+            height:150px;
+            width:150px;
+            border-radius:50px;
+           }
+          
+            @keyframes my
+            {
+                0%{background:Red;left:0px;top:0px;}
+                25%{background:blue;left:200px;top:150px;}
+                50%{background:yellow;left:200px;top:200px}
+                75%{background:green;left:150px;top:200px;}
+                100%{background:red;left:0px;top:0px;};
+            }
+            
+           
+           
+          
+        </style>
+    </head>
+    <body>
+        <div class="box2"></div>
+        <div class="box1"></div>
+
+    </body>
+</html>
